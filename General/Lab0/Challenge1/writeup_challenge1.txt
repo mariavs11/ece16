@@ -1,0 +1,16 @@
+Challenge 1
+
+1 - Identify a user of interest.
+2 - Identify the task that they perform.
+3 - Start to ask questions pertaining to that task that would highlight potential problems.
+4 - Look for answers to your questions (browse online, ask people who fall into the category of the person, etc.)
+5 - Formulate the problem statement as best as you can based on the previous four steps.
+
+1. Student 
+2. Take notes
+
+3. One problem that can arise from that is to not be able to write down efficiently what is being said by the professor. What can I do to not lose track of what is being said?  
+
+4. One solution to this problem is to enable a transcript option but it is not always the case that the words gets transcribed perfectly. Most of the time, you are required to manually correct errors. 
+
+5. The problem identified is: how can I get a better transcription of lectures ? One way to solve this issue would be to create a design that could correct and reorganize the transcript. In other words, an algorithm that could do so by making the transcript more readable. 
