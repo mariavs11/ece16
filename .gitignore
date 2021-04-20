@@ -1,3 +1,6 @@
 echo .DS_Store >> .gitignore
 .DS_Store
 General/.DS_Store
+General/.DS_Store
+Arduino/.DS_Store
+Arduino/.DS_Store
