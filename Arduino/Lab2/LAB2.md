@@ -34,7 +34,7 @@ We were asked to implement the functionality of a gesture control watch.
 To do so, we will build it as FINITE STATE MACHINE.
 Following the requirements for the states, I came up with a state machine that had 3 states: zero_state, counting_state and countdown_state
 My watch was detecting the buzzing of the motor as a tap so I wrote the code in a way that only the second tap was detected when state = zero_state
-![state machine](IMG_0036.jpg)
+![IMG_0036](https://user-images.githubusercontent.com/70724215/115502734-3e26fa00-a22a-11eb-800b-a9b23da67dfb.jpg)
 
 File are too long so I put it inside the Images folder 
 ### Demonstrates the reset functionality 
