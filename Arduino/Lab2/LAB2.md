@@ -21,8 +21,7 @@ To do that, I observed the changes in ax, ay and az in reaction to taps. So I ca
 
 Inside the detectTaps tab, I created an algorythm that detected a tap whenever two of the axes was out of range. This allowed for detectTaps to not be that sensible to changes in the axes values because otherwise it would recognize every slight change as a tap. 
 
-
-![DETECTTAPS](DETECT.png)
+<img width="697" alt= "DETECT" src="https://user-images.githubusercontent.com/70724215/115501634-69a8e500-a228-11eb-8af2-9b7eea813871.png">
 
 ![CHALLENGE 1 GIF](challenge1.gif)
 
