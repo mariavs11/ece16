@@ -21,10 +21,10 @@ To do that, I observed the changes in ax, ay and az in reaction to taps. So I ca
 
 Inside the detectTaps tab, I created an algorythm that detected a tap whenever two of the axes was out of range. This allowed for detectTaps to not be that sensible to changes in the axes values because otherwise it would recognize every slight change as a tap. 
 
+<img width="697" alt= "DETECT" src="https://user-images.githubusercontent.com/70724215/115501634-69a8e500-a228-11eb-8af2-9b7eea813871.png">
 
-![DETECTTAPS](DETECT.png)
+![challenge1](https://user-images.githubusercontent.com/70724215/115502034-2307ba80-a229-11eb-9363-ca44f503972c.gif)
 
-![CHALLENGE 1 GIF](challenge1.gif)
 
 
 
@@ -34,10 +34,11 @@ We were asked to implement the functionality of a gesture control watch.
 To do so, we will build it as FINITE STATE MACHINE.
 Following the requirements for the states, I came up with a state machine that had 3 states: zero_state, counting_state and countdown_state
 My watch was detecting the buzzing of the motor as a tap so I wrote the code in a way that only the second tap was detected when state = zero_state
-![state machine](IMG_0036.jpg)
+![IMG_0036](https://user-images.githubusercontent.com/70724215/115502734-3e26fa00-a22a-11eb-800b-a9b23da67dfb.jpg)
+
+File are too long so I put it inside the Images folder 
 ### Demonstrates the reset functionality 
 ![reset press](reset.gif)
-
 ### Counts to 56 and after 4s go by it counts down to 0
 
 ![countdown](countdown.gif)
