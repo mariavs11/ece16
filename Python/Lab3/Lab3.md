@@ -31,12 +31,10 @@ Displaying owcay-irlgay and cow-girl
 
 ##  Challenge 2
 For Challenge2, we used open weather api to display temperature, current time, date and weather on the OLED. 
+We had to display the information from a specific a location (I chose San Diego,CA,US).
 We were asked to send the data from Python and to update the OLED in real-time via Bluetooth. 
 To do this, I had to learn how to use the libraries : pyowm and datetime.
-We had to display the information from a specific a location (I chose San Diego,CA,US).
 
-My GIF turned out to be a large file but it is
- inside the "images" folder
-![weatherwatch](weather_watch.gif)
+![weatherwatch](Python/Lab3/images/weather_watch.gif)
 
 
