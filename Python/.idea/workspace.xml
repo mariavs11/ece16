@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18b136c3-b5e5-42e0-b92d-f57b09a791b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab5/Lab5.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab5/data/Brenneroffline.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab5/data/accelerometer.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab5/images/Brenneroffline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab5/images/c1_BL.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab5/images/c2_BL.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab5/images/pedometerofflineMaria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab5/images/pedometeronlineMaria.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab5/images/pedometersteps.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECE16Lib/Communication.py" beforeDir="false" afterPath="$PROJECT_DIR$/ECE16Lib/Communication.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECE16Lib/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4/challenge1_sensor_sensing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/challenge1_sensor_sensing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab5/Lab5.md" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5/Lab5.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

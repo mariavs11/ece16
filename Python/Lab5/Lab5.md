@@ -20,8 +20,12 @@ We also tried to implement the filtering steps that were laid out in the write-u
 
 l1 -> dt of l1 -> lp of dt -> counting peaks
 
+Brenner's Offline Data (7 steps) | Maria's Offline Data (8 steps) 
+------------ | -----------
+!["Brenner's Data"](./images/Brenneroffline.png) | !["Maria's Data"](./images/pedometerofflineMaria.png)
 
-Brenner's Data | Maria's Data 
+
+Brenner's Online Data | Maria's Online Data 
 ------------ | -----------
 !["Brenner's Data"](./images/c1_BL.gif) | !["Maria's Data"](./images/pedometeronlineMaria.gif)
 
@@ -32,6 +36,6 @@ https://www.youtube.com/watch?v=LJHF1fYdlSY
 For Challenge2, we were required to record our jumping jacks in the MCU, but 
 to only send the data to Python when the button is pressed. 
 Our biggest challenge was to create a data buffer inside the Arduino file by storing 
-the data inside a large array and getting rid of old data when the buffer gets full. 
+the data inside a large array and getting rid of old data when the buffer gets full.
 
 !["Working Jumping Jacks"](./images/c2_BL.gif)
