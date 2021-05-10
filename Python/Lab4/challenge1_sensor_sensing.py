@@ -91,6 +91,7 @@ if __name__ == "__main__":
             plt.show(block=False)
             plt.pause(0.001)
           if (False):
+            plt.cla()
             plt.subplot(131)
             plt.title('L2 norm of all axes')
             plt.plot(L2)

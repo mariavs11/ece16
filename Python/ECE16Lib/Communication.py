@@ -8,7 +8,7 @@ class Communication:
   '''
 Encapsulated class attributes (with default values)
   '''
-  __serial_name = "/dev/cu.SLAB_USBtoUART"
+  __serial_name = ""
   __baud_rate = 115200
   __ser = None
 
@@ -33,9 +33,9 @@ Encapsulated class attributes (with default values)
   def close(self):
     sleep(0.5)
     self.__ser.close()
-
-
-  # Send a message to Serial (always terminated by a newline character)
+  '''
+  Send a message to Serial (always terminated by a newline character)
+  '''
   def send_message(self, message):
     if(message[-1] != '\n'):
       message = message + '\n'
@@ -46,20 +46,20 @@ Encapsulated class attributes (with default values)
   Note:
     At 50Hz sampling and baud rate of 115200, the limit is 288 bytes/sample
     115200 b/s == 14400 B/s == (14400 B/s)/(50 s/sample) = 288 bytes/sample
-'''
+  '''
 
 
-def receive_message(self, num_bytes=50):
+  def receive_message(self, num_bytes=50):
     if (self.__ser.in_waiting > 0):
         return self.__ser.readline(num_bytes).decode('utf-8')
     else:
         return None
 
 
-'''
-Clear the data buffer in case it is necessary to eliminate junk data
-'''
+  '''
+  Clear the data buffer in case it is necessary to eliminate junk data
+  '''
 
 
-def clear(self):
+  def clear(self):
     self.__ser.reset_input_buffer()

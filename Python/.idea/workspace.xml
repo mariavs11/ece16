@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="18b136c3-b5e5-42e0-b92d-f57b09a791b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab5/Lab5.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab5/data/Brenneroffline.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab5/data/accelerometer.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab5/images/Brenneroffline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab5/images/c1_BL.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab5/images/c2_BL.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab5/images/pedometerofflineMaria.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab5/images/pedometeronlineMaria.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab5/images/pedometersteps.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ECE16Lib/Communication.py" beforeDir="false" afterPath="$PROJECT_DIR$/ECE16Lib/Communication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ECE16Lib/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/challenge1_sensor_sensing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/challenge1_sensor_sensing.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1sKbzd4Q6Pc5GhgUvwDEeWAqeKV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lab5/images" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Lab5/images" />
+      <recent name="$PROJECT_DIR$/Lab5/data" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Lab5/images" />
+      <recent name="$PROJECT_DIR$/Lab5" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18b136c3-b5e5-42e0-b92d-f57b09a791b4" name="Default Changelist" comment="" />
+      <created>1620624491762</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620624491762</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
