@@ -1,6 +1,6 @@
-#Lab 7
+# Lab 7
 
-### One of the objective of this lab was to implement a HR monitor by using Machine Learning. The second objective was to build a wearable with all the classes that we created in previous labs. 
+### One of the objectives of this lab was to implement a HR monitor by using Machine Learning. The second objective was to build a wearable with all the classes that we created in previous labs. 
 
 For tutorial 1
  
