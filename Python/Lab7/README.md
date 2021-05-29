@@ -24,7 +24,7 @@ We plotted the gaussian with a histogram of the data, showing how the gaussian f
 
 tutorial_gmm_losov.py
 
-Here, we performed Leave-One-Subject-Out-Validation which entailed training the data of all subjects expect for one, then we tested the predicted label on the excluded subject. 
+Here, we performed Leave-One-Subject-Out-Validation which entailed training the data of all subjects except for one, then we tested the predicted label on the excluded subject. 
 
 ### Challenge 1
 Here, we performed Leave-One-Subject-Out-Validation from Tutorial 2 for every subject. Then, we put inside one array the ground_truth heartrate and in another array, the estimated heartrate.
@@ -33,10 +33,13 @@ Using these values, we plotted ground_truth x estimate and computed the RMSE.
 Inside get_data, I implemented code that skipped samples with bad sampling rates and I additionally skipped 2 samples whose ground_truth values deviated a lot from the estimated (in comparison to other samples).
 
 Below, at the top, is the ground_truth x estimated plot. Our RMSE for all validation sets combined came out to be  6.0659. 
+
 The results demonstrate :
 Correlation coefficcient = 0.95 (it tells us how related our estimated heartrate is to the ground truth; the closer it gets to a 1, the better, so that means that we got an ideal correlation coefficient )
+
 standard deviation is 6.042 
-bias  = -2.4198 ( Bias is a quantitative term describing the difference between the average of measurements made on the same object and its true value; the small bias that see computed reveals that our results are not that biased )
+
+bias  = -2.4198 ( Bias is a quantitative term describing the difference between the average of measurements made on the same object and its true value; the small bias that we see computed reveals that our results are not that biased )
 
 The Band Altman plot is at the bottom:
 
@@ -56,7 +59,7 @@ https://www.youtube.com/watch?v=DSJhoiBDhP4
 
 ## Challenge 3
 
-We create a wearable that displayed the current time, date, temperature, estimate the user's heartrate, and counted the steps. A functionality we added was the ability to start and stop the Pedometer at any time with a button press. The motor will buzz whenever the button is pressed down. 
+We created a wearable that displayed the current time, date, temperature, estimate the user's heartrate, and counted the steps. A functionality we added was the ability to start and stop the Pedometer at any time with a button press. The motor will buzz whenever the button is pressed down. 
 Below is the state machine:
 ![State Machine of Complete Wearable](./images/c3_statemachine.png)
  
