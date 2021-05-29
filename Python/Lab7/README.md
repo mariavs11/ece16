@@ -61,7 +61,6 @@ https://www.youtube.com/watch?v=DSJhoiBDhP4
 
 We created a wearable that displayed the current time, date, temperature, estimate the user's heartrate, and counted the steps. A functionality we added was the ability to start and stop the Pedometer at any time with a button press. The motor will buzz whenever the button is pressed down. 
 Below is the state machine:
-![State Machine of Complete Wearable](./images/c3_statemachine.png)
  
 ![FSM](./images/statemachinecompletewearable.png)
 
