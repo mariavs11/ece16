@@ -1557,17 +1557,22 @@ while True:
             
     elif thisGame.mode == 2:
         # waiting after getting hit by a ghost
+
+        mySocket.sendto("BUZZ".encode('utf-8'),addr)
+
         thisGame.modeTimer += 1
         
         if thisGame.modeTimer == 90:
             thisLevel.Restart()
             
             thisGame.lives -= 1
+            
             if thisGame.lives == -1:
                 thisGame.updatehiscores(thisGame.score)
                 thisGame.SetMode( 3 )
                 thisGame.drawmidgamehiscores()
             else:
+                # Restarting after getting hit
                 thisGame.SetMode( 4 )
                 
     elif thisGame.mode == 3:
@@ -1653,7 +1658,9 @@ while True:
     
     
     thisGame.DrawScore()
-    
+    mySocket.sendto(f"Score: {thisGame.score}".encode('utf-8'),addr)
+    mySocket.sendto(f"Lives: {thisGame.lives}".encode('utf-8'),addr)
+
     pygame.display.flip()
     
     clock.tick (60)

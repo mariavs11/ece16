@@ -2,55 +2,185 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5799bafd-6d31-4128-b1cf-8d3c7dd2969b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SocketsTest/client.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SocketsTest/server.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/fonts/space_invaders.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/enemy1_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/enemy1_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/enemy2_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/enemy2_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/enemy3_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/enemy3_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/enemylaser.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/explosionblue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/explosiongreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/explosionpurple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/laser.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/mystery.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/ship.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/0.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/invaderkilled.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/mysteryentered.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/mysterykilled.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/shipexplosion.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/shoot.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/shoot2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/spaceinvaders.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Arduino/SpaceInvadersController/Accelerometer.ino" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Arduino/SpaceInvadersController/Communication.ino" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Arduino/SpaceInvadersController/Display.ino" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Arduino/SpaceInvadersController/Photodetector.ino" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Arduino/SpaceInvadersController/Sampling.ino" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Arduino/SpaceInvadersController/SpaceInvadersController.ino" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/ECE16Lib/CircularList.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/ECE16Lib/Communication.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/ECE16Lib/DSP.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/ECE16Lib/HRMonitor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/ECE16Lib/Pedometer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/ECE16Lib/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/space_invaders_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/comdlg32.oca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/controller/Arduino/PacmanController/Accelerometer.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/controller/Arduino/PacmanController/Communication.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/controller/Arduino/PacmanController/Display.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/controller/Arduino/PacmanController/Motor.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/controller/Arduino/PacmanController/PacmanController.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/controller/Arduino/PacmanController/Photodetector.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/controller/Arduino/PacmanController/Sampling.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/controller/Python/pacman_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/frmLvlEdit.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/frmLvlEdit.frx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/frmLvlEdit.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/frmProperties.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/frmProperties.frx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/frmSpriteList.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/frmSpriteList.frx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/COMCT232.OCX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/COMCT332.DEP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/COMCT332.OCX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/COMCT332.SRG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/COMCTL.SRG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/COMCTL2.SRG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/COMCTL32.DEP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/COMCTL32.OCX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/COMDLG32.DEP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/COMDLG32.OCX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/MSCOMCT2.DEP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/MSCOMCT2.OCX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/MSCOMCT2.SRG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/MSCOMCTL.DEP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/MSCOMCTL.OCX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/MSCOMCTL.SRG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/MSCOMM.SRG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/MSCOMM32.DEP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/MSCOMM32.OCX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/MSTEXT35.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/MSVBVM60.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/MSVCIRT.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/MSVCRT.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/MSVCRT40.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/ODTEXT32.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/OLEAUT32.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/OLEPRO32.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/REGSVR32.EXE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/RICHED20.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/RICHED32.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/RICHTEXT.SRG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/RICHTX32.DEP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/RICHTX32.OCX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/TLBINF32.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/VB6.OLB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/VB6DEBUG.DLL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/VB6EXT.OLB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/libraries/VBAEXE6.LIB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/modEditor.bas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/maze_editor.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/pacman.pyw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/VeraMoBd.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/backgrounds/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/crossref.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/hiscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/levels/0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/levels/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/levels/10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/levels/11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/levels/12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/levels/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/levels/3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/levels/4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/levels/5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/levels/6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/levels/7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/levels/8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/levels/9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sounds/eatfruit.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sounds/eatgh2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sounds/extralife.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sounds/fruitbounce.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sounds/pellet1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sounds/pellet2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sounds/powerpellet.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/fruit 0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/fruit 1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/fruit 2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/fruit 3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/fruit 4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/ghost 1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/ghost 2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/ghost 3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/ghost 4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/ghost 5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/ghost 6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-d 1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-d 2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-d 3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-d 4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-d 5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-d 6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-d 7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-d 8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-l 1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-l 2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-l 3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-l 4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-l 5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-l 6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-l 7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-l 8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-r 1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-r 2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-r 3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-r 4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-r 5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-r 6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-r 7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-r 8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-u 1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-u 2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-u 3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-u 4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-u 5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-u 6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-u 7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman-u 8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/sprite/pacman.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/text/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/text/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/text/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/text/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/text/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/text/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/text/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/text/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/text/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/text/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/text/gameover.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/text/life.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/text/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/text/ready.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/door-h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/door-v.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/ghost-blinky.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/ghost-door.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/ghost-inky.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/ghost-pinky.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/ghost-sue.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/glasses.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/hiscores.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/pellet-power.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/pellet.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/showlogo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/start.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-corner-ll.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-corner-lr.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-corner-ul.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-corner-ur.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-end-b.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-end-l.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-end-r.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-end-t.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-nub.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-straight-horiz.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-straight-vert.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-t-bottom.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-t-left.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-t-right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-t-top.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/wall-x.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/pacman/res/tiles/x-paintwall.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/projLvlEdit.vbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/projLvlEdit.vbw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/screenshot-large-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/screenshot-maze-editor-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/screenshot-maze-editor-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/pacman-python/screenshot-maze-editor-x-paintwall.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +206,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.." />
       <recent name="$PROJECT_DIR$/PythonSuperMario" />
     </key>
   </component>

@@ -75,9 +75,9 @@ class PygameController:
     # gameStart = False
     gameStart = True
     data = None
-    paused = False
-    # prevCommand_vert = None
-    # prevCommand_hori = None
+    score = None
+    lives = None
+
     prevCommand = None
     
     sleep(1)
@@ -92,16 +92,24 @@ class PygameController:
       except BlockingIOError:
         pass
 
-      # Tells MCU to vibrate when hit
-      if data == "HIT":
+      # Tells MCU to vibrate when hit by a ghost
+      if data == "BUZZ":
         self.comms.send_message("BUZZ")
         data = None
 
-      # Sends score to MCU to display on OLED
+      # Decides whether to update lives/score on OLED display
       elif data != "END" and data != "START" and data != None:
-        if score != int(data):
-          score = int(data)
-          self.comms.send_message(f"{score}")
+        
+        text, num = data.split(":")
+        if text == "Score" and score != int(num):
+          print(data)
+          score = int(num)
+          self.comms.send_message(data)
+
+        elif text == "Lives" and lives != int(num):
+          print(data)
+          lives = int(num)
+          self.comms.send_message(data)
 
       # When the game starts, start sending the commands from MCU to game
       if gameStart == False and data == "START":
@@ -116,8 +124,8 @@ class PygameController:
         command_vert = None
         # message = int(message)
 
-        [m1, m2, m3, m4, m5] = message.split(',')
-        # Format: x, y, z, fire binary, pause binary
+        [m1, m2, m3, m4] = message.split(',')
+        # Format: x, y, z, fire binary
 
         # Add to Circularlist
         self.x.add(int(m1))
@@ -128,14 +136,6 @@ class PygameController:
         if int(m4) == 1:
           mySocket.send("FIRE".encode("UTF-8"))
 
-        # Tells game to pause if pause button was pressed
-        if int(m5) == 1:
-          mySocket.send("PAUSE".encode("UTF-8"))
-          print("Sent pause")
-          if paused == True:
-            paused = False
-          else:
-            paused = True
 
         # After certain time, filter the moving average
         currentTime = time()
@@ -145,17 +145,16 @@ class PygameController:
           # print(self.x,self.y,self.z)
           command_hori, command_vert = self.getOrientation()
 
-        print(command_hori, command_vert)
+        # print(command_hori, command_vert)
 
-        # If the command is not None and the game isn't paused, send the input to the server
+        # If the command is not None, send the input to the server
         # Sends the command only if the direction has changed
-        if paused == False:
-          if command_hori is not None and command_hori != prevCommand:
-            mySocket.send(command_hori.encode("UTF-8"))
-            prevCommand = command_hori
-          elif command_vert is not None and command_vert != prevCommand:
-            mySocket.send(command_vert.encode("UTF-8"))
-            prevCommand = command_vert
+        if command_hori is not None and command_hori != prevCommand:
+          mySocket.send(command_hori.encode("UTF-8"))
+          prevCommand = command_hori
+        elif command_vert is not None and command_vert != prevCommand:
+          mySocket.send(command_vert.encode("UTF-8"))
+          prevCommand = command_vert
 
 
 
