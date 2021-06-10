@@ -2,12 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5799bafd-6d31-4128-b1cf-8d3c7dd2969b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Python/Lab7/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Python/Lab7/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SocketsTest/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SocketsTest/server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/fonts/space_invaders.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/enemy1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/enemy1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/enemy2_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/enemy2_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/enemy3_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/enemy3_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/enemylaser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/explosionblue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/explosiongreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/explosionpurple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/laser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/mystery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/images/ship.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/invaderkilled.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/mysteryentered.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/mysterykilled.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/shipexplosion.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/shoot.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/sounds/shoot2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/SpaceInvaders/spaceinvaders.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Arduino/SpaceInvadersController/Accelerometer.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Arduino/SpaceInvadersController/Communication.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Arduino/SpaceInvadersController/Display.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Arduino/SpaceInvadersController/Photodetector.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Arduino/SpaceInvadersController/Sampling.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Arduino/SpaceInvadersController/SpaceInvadersController.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/ECE16Lib/CircularList.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/ECE16Lib/Communication.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/ECE16Lib/DSP.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/ECE16Lib/HRMonitor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/ECE16Lib/Pedometer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/ECE16Lib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ece16-space-invaders/controller/Python/space_invaders_controller.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,6 +76,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PythonSuperMario" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -32,5 +96,17 @@
       <updated>1622263197518</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
