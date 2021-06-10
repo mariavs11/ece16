@@ -65,7 +65,7 @@ void loop() {
     if (command[0] == 'S') {
       writeDisplay(command.c_str(), 1, false);
     }
-    // if received score, displays lives onto the OLED on row 2
+    // if received lives, displays lives onto the OLED on row 2
     else if (command[0] == 'L') {
 
     // displays Game over once you've lost all your lives
@@ -93,15 +93,6 @@ void loop() {
     z = az - Z_ZERO;
     
     String message = String(x) + "," + String(y) + "," + String(z);
-
-    if (fire) {
-      message += ", 1";
-      fire = false;
-    }
-    else {
-      message += ", 0";
-    }
-
     sendMessage(message);
   }
 }
