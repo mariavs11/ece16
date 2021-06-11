@@ -368,7 +368,7 @@ class SpaceInvaders(object):
         self.enemy4Text = Text(FONT, 25, '   =  ?????', RED, 368, 420)
         self.scoreText = Text(FONT, 20, 'Score', WHITE, 5, 5)
         self.livesText = Text(FONT, 20, 'Lives ', WHITE, 640, 5)
-
+ 
         self.life1 = Life(715, 3)
         self.life2 = Life(742, 3)
         self.life3 = Life(769, 3)
@@ -472,9 +472,11 @@ class SpaceInvaders(object):
             msg = msg.decode('utf-8')
             print("Command: " + msg)
 
-            # If game receives pause command, run the pause function
-            if msg == "PAUSE":
+            ''' ============================================================ '''
+            if msg == "PAUSE": # If game receives pause command, run the pause function
                 self.pauseGame()
+            ''' ============================================================ '''
+
             if msg == "QUIT":
                 sys.exit()
             if msg == "FIRE":
@@ -584,11 +586,13 @@ class SpaceInvaders(object):
             self.sounds['shipexplosion'].play()
             ShipExplosion(player, self.explosionsGroup)
 
-            # Sends controller script the command to buzz the motor 
+            ''' ===================================================== '''
+            # Tells clients the command to buzz the motor 
             try: 
-                mySocket.sendto("HIT".encode('utf-8'),self.addr)
+                mySocket.sendto("BUZZ".encode('utf-8'),self.addr)
             except BlockingIOError:
                 pass
+            ''' ===================================================== '''
 
             self.makeNewShip = True
             self.shipTimer = time.get_ticks()
@@ -631,19 +635,16 @@ class SpaceInvaders(object):
             if self.should_exit(e):
                 sys.exit()
 
+    ''' ===================================================== '''
     def pauseGame(self):
         while True:
-            # Set enemy timer to be same so they don't
-            self.timer = time.get_ticks()
-            self.enemies.timer = time.get_ticks()
+            # Updating the timers so game doesn't speedup after unpausing
+            self.timer = time.get_ticks() # Game timer
+            self.enemies.timer = time.get_ticks() # Enemy Movement Timer
             if self.timer - self.noteTimer > self.enemies.moveTime:
-                self.noteTimer += self.enemies.moveTime
+                self.noteTimer += self.enemies.moveTime # Note Timer
 
-            # # if self.timer - self.gameTimer > 3000:
-            # #     self.gameTimer += 3000
-            self.clock.tick(60)
-
-            print("Pausing")
+            # Loops until server receives "PAUSED" command
             try:
                 data, __ = mySocket.recvfrom(1024)
                 data = data.decode('utf-8')
@@ -652,18 +653,24 @@ class SpaceInvaders(object):
                     break
             except BlockingIOError:
                 pass
+            # Blocks game until 60 ticks have passed for this loop (essentially update speed)
+            self.clock.tick(60)
+    ''' ===================================================== '''
 
 
     def main(self):
         while True:
             if self.mainScreen:
-                # This block of code is only here to let the game save the 
-                # address of the controller for future use
-                # Also initializes the data variable
+
+                ''' ===================================================== '''
+                # This block of code is only here to let the game save the address of the controller
+                # for future Socket commands while in the Main Menu
+                # Clears up buffer for any junk commands if any
                 try:
-                    data, self.addr = mySocket.recvfrom(1024)
+                    ___, self.addr = mySocket.recvfrom(1024)
                 except BlockingIOError:
                     pass
+                ''' ===================================================== '''
 
                 self.screen.blit(self.background, (0, 0))
                 self.titleText.draw(self.screen)
@@ -686,9 +693,10 @@ class SpaceInvaders(object):
                         self.reset(0)
                         self.startGame = True
 
-                        # Send controller script that game is started
+                        ''' ===================================================== '''
+                        # Tells controller client that game is started
                         mySocket.sendto("START".encode('utf-8'),self.addr)
-                        # mySocket.send("START".encode('utf-8'))
+                        ''' ===================================================== '''
 
                         self.mainScreen = False
 
@@ -732,26 +740,22 @@ class SpaceInvaders(object):
                     self.explosionsGroup.update(currentTime)
                     self.check_collisions()
 
-                    # Sends score to controller to display
+                    ''' ===================================================== '''
+                    # Sends score to client to display on the controller
                     mySocket.sendto(f"{self.score}".encode("utf-8"),self.addr)
+                    ''' ===================================================== '''
 
                     self.create_new_ship(self.makeNewShip, currentTime)
                     self.make_enemies_shoot()
 
-                # # This will pause the game if the pause command is received
-                # try:
-                #     print("Checking")
-                #     data, __ = mySocket.recvfrom(1024)
-                #     data = data.decode("utf-8")
-                #     if data == "PAUSE":
-                #         print("Detected Pause")
-                #         data = None
-                #         self.pauseGame()
-                # except BlockingIOError:
-                #     pass
-
             elif self.gameOver:
                 currentTime = time.get_ticks()
+                
+                ''' ===================================================== '''
+                # Tell client to stop sending Socket commands while in Game Over screen
+                mySocket.sendto("END".encode('utf-8'),self.addr)
+                ''' ===================================================== '''
+
                 # Reset enemy starting position
                 self.enemyPosition = ENEMY_DEFAULT_POSITION
                 self.create_game_over(currentTime)

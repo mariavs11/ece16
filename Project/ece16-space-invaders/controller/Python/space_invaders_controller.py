@@ -28,22 +28,23 @@ class PygameController:
     self.z = CircularList([],20)
 
   def getOrientation(self):
-
+    # Computes the moving average of the three accelerometer values
     x_avg = filt.moving_average(np.array(self.x),5)
     y_avg = filt.moving_average(np.array(self.y),5)
     z_avg = filt.moving_average(np.array(self.z),5)
 
+    # Use only the most recent moving average value
     x = x_avg[-1]
     y = y_avg[-1]
     z = z_avg[-1]
 
-    # if abs(x) >= abs(y) and abs(x) >= abs(z):
+    # Use thresholding to determine orientation
     if abs(x) >= 100:
       if x < 0:
         command = "LEFT"
       else:
         command = "RIGHT"
-    else:
+    else: # Controller is Flat
       command = None
     return command
 
@@ -52,40 +53,43 @@ class PygameController:
     self.comms.send_message("stop")
     self.comms.clear()
 
-    # 2. start streaming orientation data
+    # 2a. start streaming orientation data
     input("Ready to start? Hit enter to begin.\n")
     self.comms.send_message("start")
 
-    # Sending to give game the address
+    # 2b. Sending to server to share the address 
     mySocket.send("CONTROLLER".encode("UTF-8"))
 
     # 3. Forever collect orientation and send to PyGame until user exits
     print("Use <CTRL+C> to exit the program.\n")
 
+    # Initializing game state variables
     gameStart = False
-    data = None
     paused = False
-    sleep(1)
+    data = None
+
+    # Wait for a second to allow enough readings to start computing moving average
+    sleep(1) 
 
     previousTime = time()
     while True:
       message = self.comms.receive_message()
 
-      # Check if server sends any commands (START,END,HIT)
+      # Check if server sends any commands (START,END,BUZZ)
       try: 
         data = mySocket.recv(1024).decode("utf-8")
       except BlockingIOError:
         pass
 
-      # Tells MCU to vibrate when hit
-      if data == "HIT":
+      # Tells MCU to vibrate when player is hit
+      if data == "BUZZ":
         self.comms.send_message("BUZZ")
         data = None
 
-      # Sends score to MCU to display on OLED
+      # Sends score to MCU to display on OLED if score has changed
       elif data != "END" and data != "START" and data != None:
         if score != int(data):
-          score = int(data)
+          score = int(data) # Updates local score to current
           self.comms.send_message(f"{score}")
 
       # When the game starts, start sending the commands from MCU to game
@@ -95,13 +99,20 @@ class PygameController:
         self.comms.clear()
         data = None
       
+      # Ran when player loses the game, stops Socket commands
+      elif gameStart == True and data == "END":
+        gameStart = False
+        self.comms.clear()
+        data = None
+      
       # While the game is running, determine controller commands and send to game
-      elif(message != None):
+      elif message != None and gameStart == True:
         command = None
         # message = int(message)
 
         [m1, m2, m3, m4, m5] = message.split(',')
         # Format: x, y, z, fire binary, pause binary
+        # accelerometer values are zeroed 
 
         # Add to Circularlist
         self.x.add(int(m1))
@@ -112,7 +123,8 @@ class PygameController:
         if int(m4) == 1:
           mySocket.send("FIRE".encode("UTF-8"))
 
-        # Tells game to pause if pause button was pressed
+        # Tells game to toggle pause state if pause button was pressed
+        # When game is paused, Socket commands aren't sent to server
         if int(m5) == 1:
           mySocket.send("PAUSE".encode("UTF-8"))
           print("Sent pause")
@@ -121,35 +133,16 @@ class PygameController:
           else:
             paused = True
 
-        # After certain time, filter the moving average
+        # After certain time, filter the moving average and send Socket command
         currentTime = time()
         if (currentTime - previousTime >= 0.004):
           previousTime = currentTime
-          # print("processing")
-          # print(self.x,self.y,self.z)
           command = self.getOrientation()
 
-        # # if message == 0:
-        # #   command = "FLAT"
-        # # if message == 1:
-        # #   command = "UP"
-        # if message == 2:
-        #   command = "FIRE"
-        # elif message == 3:
-        #   command = "LEFT"
-        # elif message == 4:
-        #   command = "RIGHT"
-
-        # print(command)
-
-        # # If the command is not None, send the input to the server
-        # # If the command is a repeat, skip every other input to reduce buffer
-        # if command is not None and previousCmd != command:
-        if command is not None and paused == False:
-          mySocket.send(command.encode("UTF-8"))
-        #   previousCmd = command
-        # else:
-        #   previousCmd = None
+          # If the command is not None and game isn't paused, 
+          # send the input Socket command to the server
+          if command is not None and paused == False:
+            mySocket.send(command.encode("UTF-8"))
 
 
 if __name__== "__main__":

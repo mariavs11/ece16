@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5799bafd-6d31-4128-b1cf-8d3c7dd2969b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Design Challenge/controller/Arduino/PacmanController/PacmanController.ino" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Design Challenge/controller/Arduino/PacmanController/PacmanController.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Design Challenge/controller/Python/pacman_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Design Challenge/controller/Python/pacman_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Design Challenge/pacman-python/pacman/pacman.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Design Challenge/pacman-python/pacman/pacman.pyw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/ece16-space-invaders/SpaceInvaders/spaceinvaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/ece16-space-invaders/SpaceInvaders/spaceinvaders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/ece16-space-invaders/controller/Arduino/SpaceInvadersController/SpaceInvadersController.ino" beforeDir="false" afterPath="$PROJECT_DIR$/Project/ece16-space-invaders/controller/Arduino/SpaceInvadersController/SpaceInvadersController.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/ece16-space-invaders/controller/Python/space_invaders_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/ece16-space-invaders/controller/Python/space_invaders_controller.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +35,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Project" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Project" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/.." />

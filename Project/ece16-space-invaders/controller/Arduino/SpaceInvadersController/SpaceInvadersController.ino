@@ -31,7 +31,7 @@ void setup() {
   writeDisplay("Play!", 3, false);
 }
 
-
+// Initializing variables
 bool heldDown1,heldDown2 = false;
 bool fire = false;
 bool pause_ = false;
@@ -72,35 +72,28 @@ void loop() {
     heldDown2 = false;
   }
   
-  // Parse command coming from Python (either "stop" or "start")
+  // Parse command coming from Python (either "stop", "start", "BUZZ", or score updates)
   String command = receiveMessage();
-
-  // if it received 'stop', turns the controller off
   if(command == "stop") {
     sending = false;
     writeDisplay("Controller: Off", 0, true);
   }
-
-  // if it received 'start', turns controller on
   else if(command == "start") {
     sending = true;
     writeDisplay("Controller: On", 0, true);
   }
-  // if it received 'BUZZ', buzzes motor
   else if(command == "BUZZ"){
     buzz = true;
     writeDisplay("Shot",2,false);
     activateMotor(255);
     last_buzzed = millis();
     }
-
-  // displays score if the previous statements are not true
+  // Updates the score on OLED display
   else if (command != "") {
     String score = String("Score: ") + command;
     writeDisplay(score.c_str(), 1, false);
   }
-
-  // makes sure that the motor buzzes for 1 second
+    
   if(buzz && (millis() - last_buzzed >= 1000)){
     // deactivates motor after 1 second
     deactivateMotor();
@@ -115,16 +108,16 @@ void loop() {
     z = az - Z_ZERO;
     
     String message = String(x) + "," + String(y) + "," + String(z);
-    
-    if (fire) {
 
+    // If either boolean variable is true, send 1 to Python client
+    if (fire) {
       message += ", 1";
       fire = false;
     }
     else {
       message += ", 0";
     }
-
+    
     if (pause_) {
       message += ", 1";
       pause_ = false;
@@ -132,6 +125,7 @@ void loop() {
     else {
       message += ", 0";
     }
+    
     sendMessage(message);
   }
 }

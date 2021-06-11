@@ -1372,7 +1372,7 @@ def CheckInputs():
         if pygame.key.get_pressed()[ pygame.K_RETURN ] or (js!=None and js.get_button(JS_STARTBUTTON)):
             thisGame.StartNewGame()
 
-
+''' ======================================================================================================================== '''
 # New function that looks for inputs via controller 
 def CheckInputs_udp_sockets(msg):
 
@@ -1403,8 +1403,7 @@ def CheckInputs_udp_sockets(msg):
     elif thisGame.mode == 3:
         if pygame.key.get_pressed()[ pygame.K_RETURN ] or (js!=None and js.get_button(JS_STARTBUTTON)):
             thisGame.StartNewGame()
-            
-
+''' ======================================================================================================================== '''
     
 #      _____________________________________________
 # ___/  function: Get ID-Tilename Cross References  \______________________________________ 
@@ -1514,7 +1513,9 @@ if pygame.joystick.get_count()>0:
   js.init()
 else: js=None
 
-# Initialize msg 
+
+''' ============================================================ '''
+# Initialize msg variable to hold Socket commands
 msg = None
 
 # Loop checks for the start message of the controller client for the address
@@ -1530,12 +1531,15 @@ while True:
             break
     except BlockingIOError:
         pass
+''' ============================================================ '''
 
 
 while True: 
 
     CheckIfCloseButton( pygame.event.get() )
 
+    ''' ============================================================ '''
+    # Checks continuously for Socket commands by client while the game is running
     try:
         msg, ___ = mySocket.recvfrom(1024) # receive 1024 bytes
         msg = msg.decode('utf-8')
@@ -1546,9 +1550,12 @@ while True:
 
     if thisGame.mode == 1:
         # normal gameplay mode
-        # CheckInputs()
-        CheckInputs_udp_sockets(msg)
         
+        # CheckInputs()
+        ''' ============================================================ '''
+        CheckInputs_udp_sockets(msg)
+        ''' ============================================================ '''
+
         thisGame.modeTimer += 1
         player.Move()
         for i in range(0, 4, 1):
@@ -1557,8 +1564,11 @@ while True:
             
     elif thisGame.mode == 2:
         # waiting after getting hit by a ghost
-
+        
+        ''' ============================================================ '''
+        # Tell client to buzz controller motor 
         mySocket.sendto("BUZZ".encode('utf-8'),addr)
+        ''' ============================================================ '''
 
         thisGame.modeTimer += 1
         
@@ -1577,8 +1587,11 @@ while True:
                 
     elif thisGame.mode == 3:
         # game over
+
         # CheckInputs()
+        ''' ============================================================ '''
         CheckInputs_udp_sockets(msg)
+        ''' ============================================================ '''
             
     elif thisGame.mode == 4:
         # waiting to start
@@ -1655,11 +1668,13 @@ while True:
     if thisGame.mode == 5:
         thisGame.DrawNumber (thisGame.ghostValue / 2, player.x - thisGame.screenPixelPos[0] - 4, player.y - thisGame.screenPixelPos[1] + 6)
     
-    
-    
     thisGame.DrawScore()
+
+    ''' ============================================================ '''
+    # Sends the current score and lives to client
     mySocket.sendto(f"Score: {thisGame.score}".encode('utf-8'),addr)
     mySocket.sendto(f"Lives: {thisGame.lives}".encode('utf-8'),addr)
+    ''' ============================================================ '''
 
     pygame.display.flip()
     
